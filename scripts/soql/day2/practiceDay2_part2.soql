@@ -1,0 +1,29 @@
+//Child to Parent Query//
+// Get all Contact Name and Account Name that contact belong to 
+// Filter the contact to only show contact with Account 
+
+//SELECT Name , AccountId, Account.Name
+//FROM Contact
+//WHERE AccountId != null 
+//SELECT  Subject, Account.Name
+//FROM Case
+
+// Get all the casre records Subject and Account Name
+//  that belong to Account with Name 
+// starts with United 
+//SELECT Subject, Account.Name , Contact.Nam
+//FROM Case
+//WHERE Account.Name LIKE 'United%'
+
+//SELECT Subject, Account.Name , Contact.Name, CreatedBy.Name
+//FROM Case
+//WHERE Account.Name LIKE 'United%'
+
+
+// Get all opportunity Name, Owner Name, Account Name  
+// From Opportunity 
+
+// Get All the Books Name, Price, Contact Name 
+// Sort the result by Conact Name and show empty values on the botton 
+// Filter the result to show only Books with Contact Name Snow 
+

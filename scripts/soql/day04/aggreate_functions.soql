@@ -1,0 +1,48 @@
+//SELECT COUNT(Id), COUNT_DISTINCT(Name), SUM(AnnualRevenue), MAX(AnnualRevenue), MIN(AnnualRevenue), AVG(AnnualRevenue)
+//FROM Account
+
+
+//SELECT StageName, COUNT(Id)
+//FROM Opportunity
+//GROUP BY StageName
+//
+// If you use aggregate function with any additional field in Select line
+// It must be Grouped by that field or it will not work
+// Any time you add any new field other than the field in group by, it will not work
+// as long as it does not show up in group by field list
+
+
+// Get the count of Leads of each LeadSource
+
+
+// Get the count of Leads of each LeadSource
+//SELECT LeadSource, COUNT(Id)
+//FROM Lead
+//GROUP BY LeadSource
+
+
+
+// Get the count of Leads of each State 
+// only return the row if the count more than OR euqal to 2 
+
+//SELECT State, COUNT(Id)
+//FROM Lead
+//GROUP BY State
+//HAVING COUNT(Id) >= 2
+
+
+
+// Get the count of Leads for each Status 
+// only return the row if the count is than less than 5
+
+//SELECT  Status, COUNT(ID)
+//FROM Lead
+//GROUP BY Status
+//HAVING COUNT(ID) < 5
+
+
+
+
+
+
+
