@@ -1,7 +1,7 @@
 global class CallOutUtils {
     
 
-    @future
+    @future(callout=true)
     global static void createSpartan(String name, String gender, Long phone){
 
         String url = 'https://pi2hscwpkz.us-east-1.awsapprunner.com/api/spartans'; 
