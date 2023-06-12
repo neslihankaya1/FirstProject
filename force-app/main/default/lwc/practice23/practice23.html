@@ -1,0 +1,15 @@
+<template>
+    <template if:true={opportunity}>
+        <div>
+            <h1>{opportunity.Name}</h1>
+            <p>Stage: {opportunity.StageName}</p>
+            <p>Amount: {opportunity.Amount}</p>
+        </div>
+    </template>
+    <template if:false={opportunity}>
+        <p>No Opportunity found with the maximum amount.</p>
+    </template>
+    <template if:true={error}>
+        <p>{error}</p>
+    </template>
+</template>

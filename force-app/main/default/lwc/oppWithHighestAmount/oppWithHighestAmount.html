@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Opportunity with Highest Amount" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <lightning-slider
+                label="Opps Amount"
+                value={sliderValue}
+                onchange={handleSliderChange}
+                max="100000"
+                step="1000"
+            ></lightning-slider>
+        </div>
+
+        <template if:true={myOpportunity.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={myOpportunity.data}
+                columns={columns}
+            ></lightning-datatable>
+        </template>
+
+        <template if:true={myOpportunity.error}>
+            <p>ERROR OCCURRED {myOpportunity.error.body.message}</p>
+        </template>
+
+        <pre>{myOpportunityInStr}</pre>
+    </lightning-card>
+</template>

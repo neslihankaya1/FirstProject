@@ -1,0 +1,29 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Account List" icon-name="utility:table">
+      <div class="slds-var-m-around_medium">
+        <!-- search box -->
+       
+      
+        <!-- conditionally display a paragraph element
+        to show what user typed-->
+      <template lwc:if={searchKey}>
+     
+      </template>
+  
+      <!-- Display Datatable with 2 columns Food Name , Calorie -->
+      <br>
+  
+      <lightning-datatable
+        key-field="id"
+        data={filteredAccount}
+        columns={columns}>
+     </lightning-datatable>
+      
+  
+  
+      </div>
+    </lightning-card>
+  </template>
+  
+  
